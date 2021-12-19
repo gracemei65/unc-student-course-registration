@@ -1,17 +1,20 @@
 package com.unc.student.course.registraion.controller;
 
-
 import com.unc.student.course.registraion.model.Student;
 import com.unc.student.course.registraion.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
+/**
+ * Students CRDU
+ *
+ * @author  Joe Gung
+ * @version 1.0
+ * @since   2020-07-30
+ */
 
-@Controller
+@RestController
 public class StudentController {
 
     private StudentService studentService;
